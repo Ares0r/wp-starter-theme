@@ -1,4 +1,4 @@
-# Drestol template
+# Starter theme (should work with following plugins) template
 
 ## Plugins
 
