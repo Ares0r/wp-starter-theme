@@ -126,43 +126,43 @@ function bones_flush_rewrite_rules() {
 	*/
 
 	
-	add_action('init', 'init_posttypes');
+	// add_action('init', 'init_posttypes');
 
-	function init_posttypes() {
+	// function init_posttypes() {
 	
 	
-	//rejestracja custom type - zastosowania na index page
-		$systems_args = array(
-			'labels' => array(
-				'name' => 'Systemy',
-				'singular_name' => 'System',
-				'all_items' => 'Systemy',
-				'add_new' => 'Dodaj nowy',
-				'add_new_item' => 'Dodaj nowy',
-				'edit_item' => 'Zmień / Edytuj',
-				'new_item' => 'Nowy',
-				'view_item' => 'Podglad',
-				'search_items' => 'Wyszukaj',
-				'not_found' => 'Nie znaleziono',
-				'not_found_in_trash' => 'Brak w koszu',
-				'parent_item_colon' => ' '
-			),
-			'public' => true,
-			'exclude_from_search' => false,
-			'public_queryable' => true,
-			'show_ui' => true,
-			'show_in_menu' => true,
-			'query_var' => true,
-			'rewrite' => true,
-			'capability_types' => 'post',
-			'hierarchical' => true,
-			'menu_position' => 2,
-			'menu_icon' => 'dashicons-layout',
-			'supports' => array(
-				'title','editor', 'excerpt', 'thumbnail' , 'custom-fields'
-			),
-			'has_archive' => true
-		);
+	// //rejestracja custom type - zastosowania na index page
+	// 	$systems_args = array(
+	// 		'labels' => array(
+	// 			'name' => 'Systemy',
+	// 			'singular_name' => 'System',
+	// 			'all_items' => 'Systemy',
+	// 			'add_new' => 'Dodaj nowy',
+	// 			'add_new_item' => 'Dodaj nowy',
+	// 			'edit_item' => 'Zmień / Edytuj',
+	// 			'new_item' => 'Nowy',
+	// 			'view_item' => 'Podglad',
+	// 			'search_items' => 'Wyszukaj',
+	// 			'not_found' => 'Nie znaleziono',
+	// 			'not_found_in_trash' => 'Brak w koszu',
+	// 			'parent_item_colon' => ' '
+	// 		),
+	// 		'public' => true,
+	// 		'exclude_from_search' => false,
+	// 		'public_queryable' => true,
+	// 		'show_ui' => true,
+	// 		'show_in_menu' => true,
+	// 		'query_var' => true,
+	// 		'rewrite' => true,
+	// 		'capability_types' => 'post',
+	// 		'hierarchical' => true,
+	// 		'menu_position' => 2,
+	// 		'menu_icon' => 'dashicons-layout',
+	// 		'supports' => array(
+	// 			'title','editor', 'excerpt', 'thumbnail' , 'custom-fields'
+	// 		),
+	// 		'has_archive' => true
+	// 	);
 
 
 
@@ -224,9 +224,9 @@ function bones_flush_rewrite_rules() {
 	
 	
 		// register_post_type('banner', $banner_args);
-		register_post_type('systemy', $systems_args);
+		// register_post_type('systemy', $systems_args);
 		// register_post_type('blog', $blog_args);
-	}
+	// }
 
 
 
